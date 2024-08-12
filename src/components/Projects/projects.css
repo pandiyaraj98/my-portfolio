@@ -1,0 +1,102 @@
+.project_container {
+    width: 750px;
+}
+
+.project_card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: var(--mb-3);
+    height: auto;
+
+}
+
+#project_icon {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-1);
+    /* color: var(--title-color); */
+    background: linear-gradient(1deg, #4158D0 0%, #C850C0 46%, #f5b641 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project_name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-25);
+}
+
+.project_description {
+    font-size: var(--small-font-size);
+}
+
+
+.swiper-pagination-bullet {
+    background-color: var(--text-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--title-color) !important;
+}
+
+.project_links {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+
+.project_links .btn1 {
+    background: var(--title-color);
+    color: white;
+    border: none;
+    font-weight: var(--font-medium);
+    transition: 0.5s;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: 0.5s;
+    font-size: var(--small-font-size);
+    padding: 0.4rem 0.5rem;
+}
+
+.project_links .btn2 {
+    border: 1px solid black;
+    opacity: 0.8;
+    transition: 0.5s;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    padding: 0.4rem 0.5rem;
+}
+
+
+.project_links .btn1:hover, .project_links .btn2:hover {
+    /* background: linear-gradient(45deg, #374db6 0%, #c950c1 46%, #d49e39 100%); */
+    opacity: 1;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .project_container {
+        width: initial;
+    }
+
+    .project_card {
+        padding: 1.25rem 1.5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+}
